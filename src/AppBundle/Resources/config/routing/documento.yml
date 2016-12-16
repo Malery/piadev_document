@@ -1,0 +1,19 @@
+documento_new:
+    path: /
+    defaults: { _controller: "AppBundle:Documento:new" }
+    methods: POST
+    
+documento_list:
+    path: /
+    defaults: { _controller: "AppBundle:Documento:list" }
+    methods: GET
+    
+documento_delete:
+    path: /{id}
+    defaults: { _controller: "AppBundle:Documento:delete", id:null }
+    methods: DELETE
+    
+documento_edit:
+    path: /{id}
+    defaults: { _controller: "AppBundle:Documento:edit", id:null }
+    methods: PUT
